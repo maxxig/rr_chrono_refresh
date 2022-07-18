@@ -11,7 +11,7 @@ config.sections()
 config.read('config.ini')
 cnfg = config['parameters']
 
-#driver = webdriver.Chrome('D:/_sources/python/RR/update_live/chromedriver_win32/chromedriver.exe')
+
 driver = webdriver.Chrome(cnfg['chromedriver_url'])
 driver.get(cnfg['login_url'])
 
