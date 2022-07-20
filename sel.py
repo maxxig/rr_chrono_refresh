@@ -9,8 +9,8 @@ import configparser
 config = configparser.ConfigParser()
 config.sections()
 config.read('config.ini')
-cnfg = config['parameters']
 
+cnfg = config['parameters']
 
 driver = webdriver.Chrome(cnfg['chromedriver_url'])
 driver.get(cnfg['login_url'])
